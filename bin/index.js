@@ -13,7 +13,6 @@ const cmdargs = require('../lib/util/cmd.helper.js');
 cmdargs.handle(sqlConfig)
 
 
-
 /**************** START : setup express ****************/
 let app = express();
 app.use(morgan('tiny'))

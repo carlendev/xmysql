@@ -13,9 +13,6 @@ const cmdargs = require('./lib/util/cmd.helper.js');
 
 cmdargs.handle(sqlConfig);
 
-console.log(sqlConfig)
-sqlConfig.port = 35265;
-
 /**************** START : setup express ****************/
 let app = express();
 app.use(morgan('tiny'));
@@ -38,8 +35,6 @@ console.log('');
 console.log('');
 console.log('          Generating REST APIs at the speed of your thought.. ');
 console.log('');
-
-console.log(mysqlPool);
 
 let t = process.hrtime();
 let moreApis = new Xapi(sqlConfig,mysqlPool,app);
