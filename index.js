@@ -39,6 +39,8 @@ console.log('');
 console.log('          Generating REST APIs at the speed of your thought.. ');
 console.log('');
 
+console.log(mysqlPool);
+
 let t = process.hrtime();
 let moreApis = new Xapi(sqlConfig,mysqlPool,app);
 
