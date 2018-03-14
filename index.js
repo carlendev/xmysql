@@ -23,6 +23,9 @@ app.use(bodyParser.urlencoded({
 }));
 /**************** END : setup express ****************/
 
+sqlConfig.port = sqlConfig.portDatabaseNumber || 3306;
+sqlConfig.port = +sqlConfig.port
+
 
 /**************** START : setup mysql ****************/
 let mysqlPool = mysql.createPool(sqlConfig);
