@@ -25,8 +25,8 @@ describe('xmysql : tests', function () {
 
     args['host'] = 'localhost'
     args['user'] = 'root'
-    args['password'] = ''
-    args['database'] = 'classicmodels'
+    args['password'] = 'root'
+    args['database'] = 'alzahelpeat'
     args['apiPrefix'] = apiPrefix
 
     cmdargs.handle(args)

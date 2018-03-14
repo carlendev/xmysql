@@ -13,7 +13,8 @@ const cmdargs = require('./lib/util/cmd.helper.js');
 
 cmdargs.handle(sqlConfig);
 
-
+console.log(sqlConfig)
+sqlConfig.port = 35265;
 
 /**************** START : setup express ****************/
 let app = express();
